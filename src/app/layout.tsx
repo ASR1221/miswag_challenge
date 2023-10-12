@@ -1,8 +1,20 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Volkhov, Poppins } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const volkhov = Volkhov({
+  subsets: ['latin'],
+  weight: ["400", "700"],
+  variable: "--font-header",
+  preload: true,
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ["400", "700"],
+  variable: "--font-body",
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: 'Miswag Challenge',
@@ -11,6 +23,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return <html lang="en">
-    <body className={inter.className}>{children}</body>
+    <body className={`${volkhov.variable} ${poppins.variable}`}>{children}</body>
   </html>;
 }

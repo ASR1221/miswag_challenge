@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-color: #fff;
+	--text-header-color: #484848;
+  --text-sub-header-color: #8A8A8A;
+  --text-offer-color: #8A8A8A;
+  --text-sub-header-color-active: #000;
+  --bg-category-cell: #FAFAFA;
+  --bg-category-cell-active: #000;
+  --shadow-category-cell-active: #00000026;
+  --bg-product-cell: #FFFFFF;
+  --shadow-product-cell: #0000000F;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +31,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-family: var(--font-header);
+}
+
+h2, h3, h4, h5, h6, p, span, button, a {
+  font-family: var(--font-body);
 }

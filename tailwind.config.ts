@@ -8,11 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        "bg-color": "var(--bg-color)",
+        "text-header-color": "var(--text-header-color)",
+        "text-sub-header-color": "var(--text-sub-header-color)",
+        "text-offer-color": "var(--text-offer-color)",
+        "text-sub-header-color-active": "var(--text-sub-header-color-active)",
+        "bg-category-cell": "var(--bg-category-cell)",
+        "bg-category-cell-active": "var(--bg-category-cell-active)",
+        "shadow-category-cell-active": "var(--shadow-category-cell-active)",
+        "bg-product-cell": "var(--bg-product-cell)",
+        "shadow-product-cell": "var(--shadow-product-cell)",
       },
+      boxShadow: {
+        "category": "0px 20px 35px 0px #00000026",
+        "product": "0px 40px 90px 0px #00000026",
+      }
     },
   },
   plugins: [],
