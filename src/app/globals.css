@@ -6,13 +6,10 @@
   --bg-color: #fff;
 	--text-header-color: #484848;
   --text-sub-header-color: #8A8A8A;
-  --text-offer-color: #8A8A8A;
-  --text-sub-header-color-active: #000;
+  --text-sale-color: #D03947;
+  --text-sub-header-color-active: #fff;
   --bg-category-cell: #FAFAFA;
   --bg-category-cell-active: #000;
-  --shadow-category-cell-active: #00000026;
-  --bg-product-cell: #FFFFFF;
-  --shadow-product-cell: #0000000F;
 }
 
 body {
