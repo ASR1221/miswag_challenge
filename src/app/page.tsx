@@ -9,13 +9,13 @@ export default async function Home({ searchParams }: { searchParams: { category:
 	const res = await fetch("https://file.notion.so/f/f/f9a09310-af94-4993-bbca-d051d7b65e1d/63e6d4c9-1412-45e9-903a-f139e889bc5d/dataset.json?id=b435b37b-cba5-4374-875f-332e895a872c&table=block&spaceId=f9a09310-af94-4993-bbca-d051d7b65e1d&expirationTimestamp=1697227200000&signature=p2ccyGew1zHns14QfF0cTAhqXqkdhwbWfS_ldrEGkzo&downloadName=dataset.json");
 	if (!res.ok) {
 		return <div>
-			<center>
-				<h1>Miswag New Arrivals</h1>
-				<p>Stay Ahead of the Curve with Miswag&#39;s Fresh Arrivals!</p>
+			<center className="my-12">
+				<h1 className="mb-3 text-[46px] text-text-header-color">Miswag New Arrivals</h1>
+				<p className="text-text-sub-header-color">Stay Ahead of the Curve with Miswag&#39;s Fresh Arrivals!</p>
 			</center>
 			<div>
 				<center>
-					<p>Something went wrong, please try refreshing the page.</p>
+					<p className="mt-10 text-[40px] text-red-600">Something went wrong, please try refreshing the page.</p>
 				</center>
 			</div>
 		</div>
